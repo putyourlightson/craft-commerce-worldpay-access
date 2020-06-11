@@ -1,0 +1,28 @@
+{% import '_includes/forms' as forms %}
+
+{{ forms.autosuggestField({
+    label: 'Username'|t('worldpay-access'),
+    name: 'username',
+    suggestEnvVars: true,
+    value: gateway.username,
+    errors: gateway.getErrors('username'),
+    required: true,
+}) }}
+
+{{ forms.autosuggestField({
+    label: 'Password'|t('worldpay-access'),
+    name: 'password',
+    suggestEnvVars: true,
+    value: gateway.password,
+    errors: gateway.getErrors('password'),
+    required: true,
+}) }}
+
+{{ forms.autosuggestField({
+    label: 'Checkout ID'|t('worldpay-access'),
+    name: 'checkoutId',
+    suggestEnvVars: true,
+    value: gateway.checkoutId,
+    errors: gateway.getErrors('checkoutId'),
+    required: true,
+}) }}

@@ -5,7 +5,7 @@
     "type": "craft-plugin",
     "license": "proprietary",
     "require": {
-        "craftcms/cms": "^3.1.5",
+        "craftcms/cms": "^3.4.0",
         "craftcms/commerce": "^3.0",
         "craftcms/commerce-omnipay": "^2.0.0",
         "putyourlightson/omnipay-worldpay-access": "^1.0.0"

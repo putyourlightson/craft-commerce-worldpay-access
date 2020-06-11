@@ -11,7 +11,7 @@ The license fee is **$49** plus **$29** per subsequent year for updates (optiona
 
 ## Requirements
 
-Craft CMS 3.1.5 and Commerce 3.0.0 or later.
+Craft CMS 3.4.0 and Commerce 3.0.0 or later.
 
 ## Installation
 
