@@ -1,0 +1,32 @@
+{
+    "name": "putyourlightson/craft-commerce-worldpay-access",
+    "description": "Worldpay Access payment gateway for Craft Commerce.",
+    "version": "1.0.0",
+    "type": "craft-plugin",
+    "license": "proprietary",
+    "require": {
+        "craftcms/cms": "^3.1.5",
+        "craftcms/commerce": "^3.0",
+        "craftcms/commerce-omnipay": "^2.0.0",
+        "putyourlightson/omnipay-worldpay-access": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "putyourlightson\\worldpayaccess\\": "src/"
+        }
+    },
+    "support": {
+        "docs": "https://github.com/putyourlightson/craft-commerce-worldpay-access",
+        "source": "https://github.com/putyourlightson/craft-commerce-worldpay-access",
+        "issues": "https://github.com/putyourlightson/craft-commerce-worldpay-access/issues"
+    },
+    "extra": {
+        "name": "Worldpay Access",
+        "handle": "worldpay-access",
+        "developer": "PutYourLightsOn",
+        "developerUrl": "https://putyourlightson.com/",
+        "documentationUrl": "https://github.com/putyourlightson/craft-commerce-worldpay-access",
+        "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-commerce-worldpay-access/v1/CHANGELOG.md",
+        "class": "putyourlightson\\worldpayaccess\\WorldpayAccess"
+    }
+}
