@@ -85,6 +85,6 @@ class Gateway extends CreditCardGateway
      */
     protected function getGatewayClassName()
     {
-        return OmnipayGateway::class;
+        return 'WorldpayAccess';
     }
 }
