@@ -20,8 +20,12 @@ class WorldpayAccess extends Plugin
     {
         parent::init();
 
-        Event::on(Gateways::class, Gateways::EVENT_REGISTER_GATEWAY_TYPES,  function(RegisterComponentTypesEvent $event) {
-            $event->types[] = Gateway::class;
-        });
+        Event::on(
+            Gateways::class,
+            Gateways::EVENT_REGISTER_GATEWAY_TYPES,
+            function(RegisterComponentTypesEvent $event) {
+                $event->types[] = Gateway::class;
+            }
+        );
     }
 }
