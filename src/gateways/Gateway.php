@@ -36,6 +36,11 @@ class Gateway extends CreditCardGateway
     public $checkoutId;
 
     /**
+     * @var string
+     */
+    public $entityReference;
+
+    /**
      * @inheritdoc
      */
     public static function displayName(): string
@@ -72,6 +77,18 @@ class Gateway extends CreditCardGateway
     /**
      * @inheritdoc
      */
+    public function rules()
+    {
+        $rules = parent::rules();
+
+        $rules[] = [['username', 'password', 'checkoutId', 'entityReference'], 'required'];
+
+        return $rules;
+    }
+
+    /**
+     * @inheritdoc
+     */
     protected function createGateway(): AbstractGateway
     {
         /** @var OmnipayGateway $gateway */
@@ -80,6 +97,7 @@ class Gateway extends CreditCardGateway
         $gateway->setUsername(Craft::parseEnv($this->username));
         $gateway->setPassword(Craft::parseEnv($this->password));
         $gateway->setCheckoutId(Craft::parseEnv($this->checkoutId));
+        $gateway->setEntityReference(Craft::parseEnv($this->entityReference));
 
         return $gateway;
     }
