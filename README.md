@@ -23,7 +23,7 @@ composer require putyourlightson/craft-commerce-worldpay-access
 
 To add the payment gateway, go to Commerce → Settings → Gateways, create a new gateway, and set the gateway type to “Worldpay Access”.
 
-> **Tip:** The Username, Password and Checkout ID settings can be set to environment variables. See [Environmental Configuration](https://docs.craftcms.com/v3/config/environments.html) in the Craft docs to learn more.
+> **Tip:** The gateway settings can be set to environment variables. See [Environmental Configuration](https://docs.craftcms.com/v3/config/environments.html) in the Craft docs to learn more.
 
 ---
 

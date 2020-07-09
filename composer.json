@@ -1,14 +1,14 @@
 {
     "name": "putyourlightson/craft-commerce-worldpay-access",
     "description": "Worldpay Access payment gateway for Craft Commerce.",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.2",
     "type": "craft-plugin",
     "license": "proprietary",
     "require": {
         "craftcms/cms": "^3.4.0",
         "craftcms/commerce": "^3.0",
         "craftcms/commerce-omnipay": "^2.0.0",
-        "putyourlightson/omnipay-worldpay-access": "1.0.0-beta.1"
+        "putyourlightson/omnipay-worldpay-access": "1.0.0-beta.2"
     },
     "autoload": {
         "psr-4": {
