@@ -36,11 +36,6 @@ class Gateway extends CreditCardGateway
     public $checkoutId;
 
     /**
-     * @var string
-     */
-    public $entityReference;
-
-    /**
      * @inheritdoc
      */
     public static function displayName(): string
@@ -81,7 +76,7 @@ class Gateway extends CreditCardGateway
     {
         $rules = parent::rules();
 
-        $rules[] = [['username', 'password', 'checkoutId', 'entityReference'], 'required'];
+        $rules[] = [['username', 'password', 'checkoutId'], 'required'];
 
         return $rules;
     }
@@ -97,7 +92,9 @@ class Gateway extends CreditCardGateway
         $gateway->setUsername(Craft::parseEnv($this->username));
         $gateway->setPassword(Craft::parseEnv($this->password));
         $gateway->setCheckoutId(Craft::parseEnv($this->checkoutId));
-        $gateway->setEntityReference(Craft::parseEnv($this->entityReference));
+
+        // Set entity reference to the current site handle
+        $gateway->setEntityReference(Craft::$app->getSites()->getCurrentSite()->handle);
 
         return $gateway;
     }

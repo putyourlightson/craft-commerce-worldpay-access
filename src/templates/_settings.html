@@ -26,12 +26,3 @@
     errors: gateway.getErrors('checkoutId'),
     required: true,
 }) }}
-
-{{ forms.autosuggestField({
-    label: 'Entity Reference'|t('worldpay-access'),
-    name: 'entityReference',
-    suggestEnvVars: true,
-    value: gateway.entityReference,
-    errors: gateway.getErrors('entityReference'),
-    required: true,
-}) }}
