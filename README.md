@@ -1,5 +1,7 @@
 <p align="center"><img width="130" src="./src/icon.svg"></p>
 
+# Worldpay Access Plugin for Craft Commerce
+
 This plugin provides a [Worldpay](https://www.worldpay.com/) integration for [Craft Commerce](https://craftcms.com/commerce) using the [Access Worldpay](https://developer.worldpay.com/docs/access-worldpay) gateway.
 
 ## License

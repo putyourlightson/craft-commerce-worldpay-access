@@ -26,3 +26,10 @@
     errors: gateway.getErrors('checkoutId'),
     required: true,
 }) }}
+
+{{ forms.lightswitchField({
+     label: 'Test Mode'|t('worldpay-access'),
+     name: 'testMode',
+     on: gateway.testMode,
+     errors: gateway.getErrors('testMode'),
+ }) }}

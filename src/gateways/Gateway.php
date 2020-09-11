@@ -7,6 +7,7 @@ namespace putyourlightson\worldpayaccess\gateways;
 
 use Craft;
 use craft\commerce\base\RequestResponseInterface;
+use craft\commerce\models\payments\BasePaymentForm;
 use craft\commerce\models\Transaction;
 use craft\commerce\omnipay\base\CreditCardGateway;
 use craft\commerce\Plugin;
@@ -34,6 +35,11 @@ class Gateway extends CreditCardGateway
      * @var string
      */
     public $checkoutId;
+
+    /**
+     * @var bool
+     */
+    public $testMode = true;
 
     /**
      * @inheritdoc
@@ -97,6 +103,28 @@ class Gateway extends CreditCardGateway
         $gateway->setEntityReference(Craft::$app->getSites()->getCurrentSite()->handle);
 
         return $gateway;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    protected function createPaymentRequest(Transaction $transaction, $card = null, $itemBag = null): array
+    {
+        $request = parent::createPaymentRequest($transaction, $card, $itemBag);
+        $request['testMode'] = $this->testMode;
+
+        return $request;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    protected function createRequest(Transaction $transaction, BasePaymentForm $form = null)
+    {
+        $request = parent::createRequest($transaction, $form);
+        $request['testMode'] = $this->testMode;
+
+        return $request;
     }
 
     /**
