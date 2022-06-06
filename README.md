@@ -7,7 +7,7 @@ This plugin provides a [Worldpay](https://www.worldpay.com/) integration for [Cr
 ## License
 
 This plugin requires a commercial license purchasable through the [Craft Plugin Store](https://plugins.craftcms.com/worldpay-access).  
-The license fee is **$49** plus **$29** per subsequent year for updates (optional).
+The license fee is **$99** plus **$49** per subsequent year for updates (optional).
 
 ## Requirements
 
