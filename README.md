@@ -4,6 +4,11 @@
 
 This plugin provides a [Worldpay](https://www.worldpay.com/) integration for [Craft Commerce](https://craftcms.com/commerce) using the [Access Worldpay](https://developer.worldpay.com/docs/access-worldpay) gateway.
 
+> **The release of this plugin has been put on hold. While the plugin is for the most part complete, it requires a final round of testing, adding compatibility for Craft 4 and general maintenance. If you have an urgent need for it then please send the following information to info@putyourlightson.com:**
+> - The number of licenses you require.
+> - The major version number(s) of Craft that you plan to run it on.
+> - How much budget is available to commission the release of this plugin.
+
 ## License
 
 This plugin requires a commercial license purchasable through the [Craft Plugin Store](https://plugins.craftcms.com/worldpay-access).  
